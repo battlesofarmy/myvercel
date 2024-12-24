@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 // Use Middleware
 app.use(cors(
   {
-    origin: ['https://myvercel-theta.vercel.app'],
+    origin: ['https://myvercel-fugz.vercel.app'],
     methods: ["POST", "GET"],
     credentials: true
   }
