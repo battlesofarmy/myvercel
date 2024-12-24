@@ -4,7 +4,13 @@ const cors = require('cors');
 const port = process.env.PORT || 3000;
 
 // Use Middleware
-app.use(cors());
+app.use(cors(
+  {
+    origin: ['https://myvercel-theta.vercel.app'],
+    methods: ["POST", "GET"],
+    credentials: true
+  }
+));
 app.use(express.json());
 
 
